@@ -21,7 +21,24 @@ fn main() {
     let arr2: [i32;4] = [1,2,3,4];
     println!("{}",arr2[1]);
     
-   
+    // contiguous resizable array type aka Vector
+
+    let vtr = vec!{1,2,3};
+    println!("{:?}",vtr);
+
+    let v: Vec<i32> = (0..8).collect();
+    println!("{:?}",v);
+
+    // 
+    let mut vc=Vec::new();
+    vc.push("Something");
+    println!("{:?}",vc);
+    
+    //
+    let vect = Vec::<i32>::with_capacity(5);
+    println!("{:?}",vect.capacity());
+
+
     
 
 }
