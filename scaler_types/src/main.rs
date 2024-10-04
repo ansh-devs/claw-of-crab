@@ -1,5 +1,5 @@
 fn main() {
-    println!("Hi, I am Crab's Claw!");
+    let some = || println!("Hi, I am Crab's Claw!");
 
     let decimal = 02_55;
     let hex = 0xff;
@@ -7,7 +7,7 @@ fn main() {
     let binary = 0b1111_1111;
     let byte = b'G';
 
-    println!("{}",decimal);
+   
     println!("{}",hex);
     println!("{}",octal);
     println!("{}",binary);

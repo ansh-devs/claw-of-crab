@@ -1,7 +1,7 @@
 use std::vec;
 
 fn main() {
-    println!("Hi, I am Crab's Claw!");
+    let some = || println!("Hi, I am Crab's Claw!");
 
     let tup = (65_535,"ansh","rustify");
     println!("{}",tup.0);
@@ -11,8 +11,9 @@ fn main() {
     // destructuring
     let (x,y,z) = tup;
     println!("{}",x);
-    println!("{}",y);
-    println!("{}",z);
+    let s1 = String::from("example");
+
+let s2 = s1;
     
     let arr =[1,3,5,7,9,11];
     println!("{}",arr[1]);
