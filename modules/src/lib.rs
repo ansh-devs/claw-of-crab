@@ -7,8 +7,8 @@ mod users {
 }
 mod Admins;
 
-use crate::Admins::AddAdmin;
-use users::normalUsers;
+use crate::Admins::Admins::AddAdmin;
+use crate::users::User;
 
 fn dosomething(){
     let usrs = users::User{name:String::from("Ansh")};

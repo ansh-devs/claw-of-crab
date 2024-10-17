@@ -1,3 +1,5 @@
-pub fn AddAdmin(){}
 
-pub mod normalUsers
+pub mod normalUsers{
+    pub fn AddAdmin(){}
+
+}
