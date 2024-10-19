@@ -67,7 +67,16 @@ fn main() {
 
     // will override the value if already present for the same key. 
     mp.insert(3,9);
+    
+    // removes the Key Value Pair with the corresponding key
+    let val = mp.remove(&1);
+    println!("{:?}\n",val);
 
+    // removes the entry and returns the key value which has been removed.
+    let val = mp.remove_entry(&1);
+    println!("{:?}\n",val);
+
+    // check if the key exists in the Map.
     println!("{:?}\n",mp.contains_key(&2));
     
 
