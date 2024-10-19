@@ -1,14 +1,14 @@
 
 use rand::seq::SliceRandom;
 use rand::thread_rng;
-use std::collections::BinaryHeap;
+use std::collections::{BinaryHeap, HashMap};
 
 fn main() {
 
     // ================== Vectors =============================
 
     let mut nums:Vec<i32> = vec![];
-    
+
     nums.push(23);
     nums.push(1);
     nums.push(47);
@@ -57,5 +57,21 @@ fn main() {
     
 
     // ================== Binary Heap =========================
+
+    // ===================== Maps =============================
+
+    let mut mp = HashMap::new();
+    mp.insert(1,1);
+    mp.insert(2,2);
+    mp.insert(3,3);
+
+    // will override the value if already present for the same key. 
+    mp.insert(3,9);
+
+    println!("{:?}\n",mp.contains_key(&2));
+    
+
+
+
 
 }
