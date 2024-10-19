@@ -1,7 +1,7 @@
 
 use rand::seq::SliceRandom;
 use rand::thread_rng;
-use std::collections::{BinaryHeap, HashMap};
+use std::collections::{BinaryHeap, HashMap,HashSet};
 
 fn main() {
 
@@ -80,7 +80,57 @@ fn main() {
     println!("{:?}\n",mp.contains_key(&2));
     
 
+    
+    // ===================== Sets =============================
 
+    let mut hs = HashSet::new();
+    
+    hs.insert(1);
+    hs.insert(2);
+    hs.insert(3);
+    hs.insert(4);
 
+    // Iteration on the Set
+    for it in hs.iter() {
+        println!("Iterator : {}",it);
+    }
+
+    let mut hs2 = HashSet::new();
+    hs2.insert(1);
+    hs2.insert(6);
+    hs2.insert(7);
+    hs2.insert(8);
+
+    // returns the elements which are present in the both Sets
+    for x in hs.intersection(&hs2) {
+        println!("Intersection : {}",x);
+    }
+
+    // Shorthand way of the above.
+    let intersection = &hs & &hs2;
+    for x in intersection {
+        println!("ShortHand Intersection : {}",x);    
+    }
+
+    
+    // returns the elements with distinct occurence in both the Sets.
+    let union = &hs | &hs2;
+    for x in union {
+        println!("Union : {}",x);
+        
+    }
+
+    // returns the elements which are in the first Set But Not in Second Set.
+    let diff = &hs - &hs2;
+    for x in diff {
+        println!("{}",x);
+    }
+
+    
+    // returns bool value of true if the set is empty else returns false.
+    println!("{}",hs.is_empty());
+
+    // returns the length of the set.
+    println!("{}",hs.len());
 
 }
