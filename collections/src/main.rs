@@ -73,7 +73,7 @@ fn main() {
     println!("{:?}\n",val);
 
     // removes the entry and returns the key value which has been removed.
-    let val = mp.remove_entry(&1);
+    let val = mp.remove_entry(&2);
     println!("{:?}\n",val);
 
     // check if the key exists in the Map.
